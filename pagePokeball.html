@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="TP2 sur Pokemon">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pokemon Scarlet</title>
+   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+   <!--Menu sticky en haut de la première page-->
+
+   <div class="menu">
+      <img src="images/logoScarlet.webp" alt="logo">
+      <div class="menuDisplay">
+         <a href="index.html">Accueil</a>
+         <a href="pageStarters.html">Pokemons "starters"</a>
+         <a href="pagePersonnage.html">Personnages</a>
+         <a href="pageCarte.html">Carte</a>
+         <a href="pagePokeball.html" class="selected">Pokéball</a>
+         <a href="pageType.html">Types de Pokémon</a>
+         <a href="bandeAnnonce.html">Bande annonce</a>
+      </div>
+   </div>
+
+   <div class="lesColonnes">
+      <!--Colonne 1 (mauve) de contenu fixe-->
+      <div class="colonne1">
+         <p>Disponible dès maintenant !</p>
+         <!--Image qui apparait a 600px-->
+         <picture>
+            <source media="(max-width:600px)" srcset="images/imageAccueil.jpg">
+            <img src="images/imagescassettejeuViolet.webp" alt="image boitier jeu Pokémon Violet">
+         </picture>
+         <!--Image qui n'apparait que plus de 600px-->
+         <div class="imageTempo">
+            <img src="images/imagecassettejeuScarlet.webp" alt="image boitier jeu Pokémon Scarlet">
+         </div>
+      </div>
+
+      <!--Colonne de contenue 2 variable-->
+      <div class="colonne2">
+         <h1>Liste des Pokéballs</h1>
+         <div class="sectionStarters">
+            <p> <img src="images/star-emblem.svg" alt="image étoile grise">
+               Vue de l'intérieur, une Poké Ball contient plusieurs surfaces miroitées.
+               L'intérieur d'une Poké Ball est censé être conçu pour que le Pokémon se sente
+               le plus confortable possible dedans grâce à ce que l'on pense une démolécularisation
+               (fait de séparer les molécules).
+            </p>
+         </div>
+         <table>
+            <tr>
+               <th>Apparence</th>
+               <th colspan="2">Nom</th>
+               <th>Description</th>
+            </tr>
+            <!--Partie POKEBALL NORMAL-->
+            <tr>
+               <td rowspan="2">
+                  <img src="images/pokeball.gif" alt="pokéball">
+               </td>
+               <td colspan="2">Pokéball</td>
+               <td rowspan="2">
+                  <p>Étant la Ball la plus classique, elle n'a pas
+                     d'effet particulier. Ainsi, son Bonus Ball est
+                     toujours de 1.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>Prix</td>
+               <td>100 Pokédollars</td>
+            </tr>
+            <!--Partie SUPERBALL-->
+            <tr>
+               <td rowspan="2">
+                  <img src="images/superball.gif" alt="superball">
+               </td>
+               <td colspan="2">Superball</td>
+               <td rowspan="2">
+                  <p>Tout comme la Poké Ball, la Super Ball n'a pas
+                     d'effet secondaire. Elle a cependant un Bonus
+                     Ball supérieure à celle-ci, le Bonus Ball de
+                     la Poké Ball étant de 1.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>Prix</td>
+               <td>600 Pokédollars</td>
+            </tr>
+            <!--Partie Hyper Ball-->
+            <tr>
+               <td rowspan="2">
+                  <img src="images/hyperball.gif" alt="Hyperball">
+               </td>
+               <td colspan="2">Hyperball</td>
+               <td rowspan="2">
+                  <p>Tout comme la Poké Ball et la Super Ball,
+                     la Hyper Ball n'a pas d'effet secondaire.
+                     Elle a cependant un Bonus Ball supérieur
+                     aux deux autres (celui de la Poké Ball étant
+                     de 1, et celui de la Super Ball de 1,5).
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>Prix</td>
+               <td>1000 Pokédollars</td>
+            </tr>
+         </table>
+      </div>
+   </div>
+</body>
+</html>

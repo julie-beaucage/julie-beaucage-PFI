@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="TP2 sur Pokemon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Scarlet</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--Menu sticky en haut de la première page-->
+
+    <div class="menu">
+        <img src="images/logoScarlet.webp" alt="logo">
+        <div class="menuDisplay">
+            <a href="index.html">Accueil</a>
+            <a href="pageStarters.html">Pokemons "starters"</a>
+            <a href="pagePersonnage.html" class="selected">Personnage</a>
+            <a href="pageCarte.html">Carte</a>
+            <a href="pagePokeball.html">Type Pokeball</a>
+            <a href="pageType.html">Types de Pokémon</a>
+            <a href="bandeAnnonce.html">Bande annonce</a>
+        </div>
+    </div>
+
+    <div class="lesColonnes">
+        <!--Colonne 1 (mauve) de contenu fixe-->
+        <div class="colonne1">
+            <p>Disponible dès maintenant !</p>
+            <!--Image qui apparait a 600px-->
+            <picture>
+                <source media="(max-width:600px)" srcset="images/imageAccueil.jpg">
+                <img src="images/imagescassettejeuViolet.webp" alt="image boitier jeu Pokémon Violet">
+            </picture>
+            <!--Image qui n'apparait que plus de 600px-->
+            <div class="imageTempo">
+                <img src="images/imagecassettejeuScarlet.webp" alt="image boitier jeu Pokémon Scarlet">
+            </div>
+        </div>
+
+        <!--Colonne de contenue 2 variable-->
+        <div class="colonne2">
+            <h1>LES PERSONNAGES</h1>
+            <div class="containerDesColonnesPersonnage">
+                <!--SECTION PERSONNAGE PROTAGONISTES-->
+                <div class="protagonistes">
+                    <h2>Les protagonistes</h2>
+                    <img src="images/protagoniste.webp" alt="Protagoniste du jeu">
+                    <p>Vous serez l'un des protagonistes de cette nouvelle aventure.
+                        Votre tenue sera différente selon que vous jouez à Pokémon Scarlet
+                        ou Pokémon Violet. Qui sait ce que vous réserve cette histoire?
+                    </p>
+                </div>
+                <!--SECTION LES PROFFESEURS-->
+                <div class="Professeurs">
+                    <h2>Les professeurs</h2>
+                    <img src="images/professeurs.webp" alt="Les professeurs du jeu">
+                    <p>Dans Pokémon Scarlet, vous rencontrerez Olim.
+                        Dans Pokémon Violet, vous ferez la connaissance de Turum.
+                        Chaque professeur mène des recherches sur certains aspects énigmatiques
+                        de l'histoire de la région.
+                    </p>
+                </div>
+                <!--SECTION AMIE MENZI-->
+                <div class="menzi">
+                    <h2>Menzi</h2>
+                    <p><img src="images/menzi.webp" alt="Menzi">
+                        Votre amie Menzi a une personnalité rayonnante. Elle déborde d'énergie et est
+                        passionnée de combats Pokémon. C'est une Dresseuse Pokémon expérimentée
+                        et digne de confiance qui vous servira de guide lors de votre aventure.
+                        Ses talents en matière de combat sont indéniables; mais il semblerait qu'elle
+                        n'excelle pas dans l'art de lancer des Poké Balls.
+                    </p>
+                </div>
+            </div> 
+        </div> 
+    </div> 
+</body>
+</html>

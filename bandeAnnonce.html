@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="TP2 sur Pokemon">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pokemon Scarlet</title>
+   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+   <!--Menu sticky en haut de la première page-->
+
+   <div class="menu">
+      <img src="images/logoScarlet.webp" alt="logo">
+      <div class="menuDisplay">
+         <a href="index.html">Accueil</a>
+         <a href="pageStarters.html">Pokemons "starters"</a>
+         <a href="pagePersonnage.html">Personnage</a>
+         <a href="pageCarte.html">Carte</a>
+         <a href="pagePokeball.html">Type Pokeball</a>
+         <a href="pageType.html">Types de Pokémon</a>
+         <a href="bandeAnnonce.html" class="selected">Bande annonce</a>
+      </div>
+   </div>
+
+   <div class="lesColonnes">
+      <!--Colonne 1 (mauve) de contenu fixe-->
+      <div class="colonne1">
+          <p>Disponible dès maintenant !</p>
+          <!--Image qui apparait a 600px-->
+          <picture>
+              <source media="(max-width:600px)" srcset="images/imageAccueil.jpg">
+              <img src="images/imagescassettejeuViolet.webp" alt="image boitier jeu Pokémon Violet">
+          </picture>
+          <!--Image qui n'apparait que plus de 600px-->
+          <div class="imageTempo">
+              <img src="images/imagecassettejeuScarlet.webp" alt="image boitier jeu Pokémon Scarlet">
+          </div>
+      </div>
+
+      <div class="colonne2">
+         <h1> Regarder la nouvelle bande annonce</h1>
+         <!--Section de la vidéo youtube-->
+         <div class="videoYoutube">
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/77YiDZy6eHg?rel=0" frameborder="0" allowfullscreen>
+            </iframe>
+         </div>
+         <!--Section élément viewport-->
+         <div class="logoViewport">
+            <img src="images/switchLogo.jpg" alt="Logo Nitendo Switch">
+         </div>
+         <div class="texteSousVideoYoutube">
+            <img src="images/3pokemons.webp" alt="photo de trois pokémons">
+            <p>
+               À l'académie, un projet extrascolaire spécial vous attend : la Chasse au Trésor.
+               Explorez l’univers du jeu et partez à la recherche de votre propre trésor !
+               <br><br>
+               Votre aventure dans les vastes étendues de la région de Paldea sera tissée
+               de trois intrigues. Empruntez la voie du Maître et défiez toutes les
+               Arènes de la région pour tenter d'atteindre le rang Maître. Respirez un parfum de
+               légende et partez en quête d'ingrédients rares aux côtés de Pepper. Avec ★
+               Objectif Stardust ★, défiez la Team Star, un groupe de trouble-fêtes qui sème
+               la zizanie dans l'école.
+            </p>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

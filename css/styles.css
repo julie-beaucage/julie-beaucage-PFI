@@ -1,0 +1,615 @@
+body {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1200px;
+}
+
+/* -------------SECTION POUR LE MENU--------------*/
+.menu {
+    display: grid;
+    grid-template-columns: 80px auto;
+    align-items: center;
+    border-bottom: 3px solid rgb(127, 35, 104);
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    font-size: 10px;
+    background-color: white;
+    z-index: 3;
+}
+
+/*Petit logo dans le menu*/
+.menu img {
+    width: 100%;
+}
+
+/* Boutons du menu*/
+.menuDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.menuDisplay a {
+    min-width: 80px;
+    max-width: 20%;
+    background-color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border-radius: 6px;
+    padding: 4px 20px 4px 20px;
+    font-size: 1.7em;
+}
+
+/* boutons 3 états à l'aide des sélecteurs :hover et :active */
+.menuDisplay a:hover {
+    color: white;
+    background-color: rgb(128, 11, 101);
+}
+
+.menuDisplay a:active {
+    background-color: rgb(230, 168, 52);
+}
+
+.menuDisplay .selected {
+    background-color: rgb(214, 36, 53);
+    color: white;
+}
+
+/* -------------COMPOSANTES DES COLONNES FIXES POUR TOUTES LES PAGES--------------*/
+.lesColonnes {
+    display: flex;
+    gap: 1%;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* -------------SECTION POUR LA BANDE/COLONNE MAUVE PRESENTE SUR TOUTES LES PAGES--------------*/
+.colonne1 {
+    margin-top: 20px;
+    background-color: rgb(122, 27, 112);
+    border: white;
+    box-sizing: border-box;
+    min-height: 300px;
+    color: white;
+    padding: 10px;
+    width: 20%;
+}
+
+.colonne1 p {
+    font-size: 2em;
+    font-family: Verdana, sans-serif;
+    color: white;
+}
+
+/*image boitier Jeu Violet*/
+.colonne1 img {
+    width: 100%;
+}
+
+/*image boitier Jeu Scarlet*/
+picture img {
+    object-fit: contain;
+    max-width: 550px;
+}
+
+/* -------------SECTION POUR LA COLONNE 2 (A DROITE) QUI EST LA MEME POUR TOUTES LES PAGES--------------*/
+.colonne2 {
+    margin-top: 20px;
+    border: rgb(231, 58, 75) solid 4px;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 15px;
+    min-height: 500px;
+    color: black;
+    padding: 10px;
+    width: 80%;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: initial;
+
+}
+
+h1 {
+    font-family: "Trirong", serif;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* -------------SECTION LA PAGE-1  ACCUEIL--------------*/
+.nouvelleAventure {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+/*Courte vidéo sans son sur page accuei*/
+video {
+    border: solid 3px rgb(209, 187, 61);
+    height: fit-content;
+    z-index: 1;
+    position: absolute;
+    margin-top: 17%;
+}
+
+.carreTexte {
+    border-radius: 4%;
+    border: solid 3px rgb(209, 187, 61);
+    width: 500px;
+    float: right;
+    text-align: left;
+    line-height: 1.6;
+    z-index: 2;
+    background-color: brown;
+    opacity: 80%;
+    font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carreTexte h2 {
+    padding-left: 100px;
+}
+
+.carreTexte p {
+    padding-left: 40%;
+    padding-right: 5%;
+}
+
+.imagePageAccueil2 {
+    width: 80%;
+}
+
+/*----------------------PAGE-2 POKEMON "STARTERS"----------*/
+.imagePageStarters {
+    background-color: rgb(20, 121, 164);
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 12%;
+    padding: 1%;
+}
+
+.imagePageStarters img {
+    max-width: 10%;
+    float: left;
+
+}
+
+.imagePageStarters p {
+    font-size: 17px;
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.boxStarters {
+    text-align: center;
+    color: black;
+    background-color: white;
+    background: transparent;
+    width: 100%;
+}
+
+.containerGrid img {
+    width: 100%;
+}
+
+/*----------------------PAGE-3 LES PERSONNAGES----------*/
+.containerDesColonnesPersonnage {
+    width: 100%;
+}
+
+.protagonistes {
+    float: left;
+    width: 32.5%;
+    min-height: 729px;
+}
+
+.protagonistes img {
+    float: none;
+    width: 70%;
+}
+
+.protagonistes p {
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.Professeurs {
+    float: left;
+    width: 32.5%;
+    min-height: 700px;
+}
+
+.Professeurs img {
+    width: 100%;
+    float: left;
+}
+
+.Professeurs p {
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.menzi {
+    float: left;
+    width: 33%;
+    min-height: 700px;
+}
+
+.menzi img {
+    width: 50%;
+    float: right;
+}
+
+.menzi p {
+    margin-left: 2px;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/*----------------------PAGE-4 LA CARTE----------*/
+
+.containerPageCarte {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: initial;
+}
+
+.containerPageCarte img {
+    float: right;
+    width: 100%;
+}
+
+.containerPageCarte p {
+    line-height: 1.6;
+}
+
+/*----------------------PAGE-5 LES POKEBALL----------*/
+.sectionStarters {
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.sectionStarters img {
+    width: 15%;
+    float: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: solid 3px black;
+}
+
+td {
+    border: solid 3px black;
+}
+
+/*----------------------PAGE-6 - TYPE DE POKÉMONS FAIBLESSE/FORT----------*/
+
+.flexGrille {
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flexGrille div {
+
+    border: solid 3px black;
+    margin: 10px;
+    width: 28%;
+    height: 300px;
+}
+
+.flexGrille img {
+    width: 35%;
+    float: left;
+}
+
+.flexGrille p {
+    font-size: 1em;
+}
+
+/*----------------------PAGE-7 LA BANDE ANNONCE----------*/
+.videoYoutube {
+    position: relative;
+}
+
+iframe {
+
+    border: solid 10px rgb(255, 25, 0);
+
+}
+
+.logoViewport {
+
+    position: fixed;
+    top: 50vh;
+    max-width: 30%;
+    right: 22%;
+    background-color: transparent;
+    color: white;
+
+}
+
+.logoViewport img {
+    width: 15%;
+    float: right;
+}
+
+
+.texteSousVideoYoutube {
+    float: inline-end;
+    top: 100px;
+}
+
+.texteSousVideoYoutube img {
+    float: left;
+    width: 100%;
+}
+
+
+
+
+/*********************BreakPoint pour quand l'écran est plus petite************************/
+@media screen and (max-width: 1185px) {
+
+    .menu {
+        width: 100%;
+        position: relative;
+    }
+
+    .menu img {
+        width: 100%;
+    }
+
+    .menuDisplay {
+        width: 100%;
+        float: none;
+
+    }
+
+    .menuDisplay a {
+        width: 100%;
+        max-width: none;
+    }
+
+    .colonne1 p {
+        font-size: 1.6em;
+        font-family: Verdana, sans-serif;
+        color: white;
+    }
+
+    .colonne2 p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    /******PAGE-1 PAGE ACCUEIL*********/
+    video {
+        border: solid 3px rgb(209, 187, 61);
+        height: fit-content;
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .nouvelleAventure {
+        width: 100%;
+        height: 500px;
+    }
+
+    .carreTexte {
+        border-radius: 4%;
+        border: solid 3px rgb(209, 187, 61);
+        width: 100%;
+        float: right;
+        text-align: left;
+        line-height: 1.6;
+        background-color: brown;
+        opacity: 80%;
+        font-size: larger;
+
+    }
+
+    .carreTexte p {
+        width: auto;
+    }
+
+}
+
+/*********************BreakPoint pour quand l'écran est plus petite************************/
+@media screen and (max-width: 1048px) {
+
+    /******PAGE-6 LES TYPES DE POKEMONS*********/
+    .flexGrille {
+        width: 100%;
+    }
+
+    .flexGrille div {
+
+        border: solid 3px rgb(237, 229, 75);
+        margin: 10px;
+        width: 100%;
+        height: 300px;
+        background-color: transparent;
+    }
+
+    .flexGrille img {
+        width: 85px;
+        float: left;
+
+    }
+
+    /******PAGE-7 LA BANDE ANNONCE*********/
+       .videoYoutube {
+        width: 100%;
+    }
+
+    iframe {
+        max-width: 90%;
+    }
+
+    .logoViewport {
+
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        bottom: 0;
+        position: static;
+
+    }
+
+    .logoViewport img {
+        width: 20%;
+    }
+
+    .logoViewport p {
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+
+}
+
+/*********************BreakPoint pour quand l'écran est plus petite************************/
+@media screen and (max-width: 900px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .colonne1 p {
+        font-size: 1.2em;
+        font-family: Verdana, sans-serif;
+        color: white;
+    }
+
+    /******PAGE-2 LES POKEMONS "STARTERS"*********/
+    .containerGrid {
+
+        display: grid;
+        grid-row: auto;
+    }
+
+    .boxStarters {
+        width: 100%;
+
+    }
+
+    .containerGrid img {
+        width: 100%;
+    }
+
+    .imagePageStarters img {
+        width: 20%;
+
+    }
+
+    /******PAGE-3 LES PERSONNAGES*********/
+
+    .containerDesColonnesPersonnage {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .protagonistes {
+        float: none;
+        width: 100%;
+
+    }
+
+    .protagonistes img {
+        float: left;
+    }
+
+    .protagonistes p {
+        margin-top: 400px;
+        line-height: 1.6;
+        padding: 10px;
+    }
+
+    .Professeurs {
+        width: 100%;
+    }
+
+    .Professeurs img {
+        width: 100%;
+        float: left;
+    }
+
+    .Professeurs p {
+        line-height: 1.6;
+        padding: 10px;
+    }
+
+    .menzi {
+        float: none;
+        width: 100%;
+
+    }
+
+    .menzi img {
+        width: 50%;
+        float: none;
+    }
+
+    .menzi p {
+        margin-left: 2px;
+        line-height: 1.6;
+        margin-top: 60px;
+        padding: 10px;
+    }
+
+}
+
+/*********************BreakPoint pour quand l'écran est plus petite************************/
+@media screen and (max-width: 600px) {
+    .lesColonnes {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .colonne1 {
+        width: 100%;
+        background-color: brown;
+        flex-direction: column;
+        max-height: 200px;
+        font-size: 1.3em;
+    }
+
+    /*Écriture plus grande*/
+    .imageTempo {
+        display: none;
+    }
+
+    .colonne2 {
+        width: 100%;
+        flex-direction: column;
+        max-height: none;
+
+    }
+
+}

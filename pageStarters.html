@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="TP2 sur Pokemon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Scarlet</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--Menu sticky en haut de la première page-->
+
+    <div class="menu">
+        <img src="images/logoScarlet.webp" alt="logo">
+        <div class="menuDisplay">
+            <a href="index.html">Accueil</a>
+            <a href="pageStarters.html" class="selected">Pokémons "starters"</a>
+            <a href="pagePersonnage.html">Personnages</a>
+            <a href="pageCarte.html">Carte</a>
+            <a href="pagePokeball.html">Pokéball</a>
+            <a href="pageType.html">Types de Pokémon</a>
+            <a href="bandeAnnonce.html">Bande annonce</a>
+        </div>
+    </div>
+
+    <div class="lesColonnes">
+        <!--Colonne 1 (mauve) de contenu fixe-->
+        <div class="colonne1">
+            <p>Disponible dès maintenant !</p>
+            <!--Image qui apparait a 600px-->
+            <picture>
+                <source media="(max-width:600px)" srcset="images/imageAccueil.jpg">
+                <img src="images/imagescassettejeuViolet.webp" alt="image boitier jeu Pokémon Violet">
+            </picture>
+            <!--Image qui n'apparait que plus de 600px-->
+            <div class="imageTempo">
+                <img src="images/imagecassettejeuScarlet.webp" alt="image boitier jeu Pokémon Scarlet">
+            </div>
+        </div>
+
+        <!--colonne de contenue 2 variable-->
+        <div class="colonne2">
+            <h1>Les Pokémons "Starters"</h1>
+
+            <div class="imagePageStarters">
+                <p> <img src="images/R.png" alt="Image Snorlax">
+                    D’étranges nouveaux Pokémons sont apparus...
+                    en même temps qu’un Pokémon appelé Mordudor.
+                    <br>
+                    Ces intrigues se déroulent dans un monde ouvert
+                    que vous pourrez parcourir comme bon vous semble.
+                    Cet univers regorgeant de Pokémon et de personnages
+                    n'attend plus que vous.
+                </p>
+
+            </div>
+            <div class="containerGrid">
+                <!--RANGÉE POKÉMONS "STARTERS" PLANTE-->
+                <div class="boxStarters ">
+                    <img src="images/spigatito.png" alt="Sprigatito">
+                </div>
+                <div class="boxStarters ">
+                    <img src="images/floragato.png" alt="Floragato">
+                </div>
+                <div class="boxStarters ">
+                    <img src="images/meowscarada.png" alt="meowscarada">
+                </div>
+
+                <!--RANGÉE POKÉMONS "STARTERS" FEU-->
+                <div class="boxStarters ">
+                    <img src="images/fuecoco.png" alt="Fuecoco">
+                </div>
+                <div class="boxStarters ">
+                    <img src="images/crocalor.png" alt="crocalor">
+                </div>
+                <div class="boxStarters ">
+                    <img src="images/skeledirge.png" alt="skeledirge">
+                </div>
+
+                <!--RANGÉE POKÉMONS "STARTERS" EAU-->
+                <div class="boxStarters ">
+                    <img src="images/quaxly.png" alt="quaxly">
+                </div>
+                <div class="boxStarters ">
+                    <img src="images/quaxwell.png" alt="quaxwell">
+                </div>
+                <div class="boxStarters ">
+                    <img src="images/quaquaval.png" alt="quaquaval">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

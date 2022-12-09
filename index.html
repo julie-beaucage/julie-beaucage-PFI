@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="TP2 sur Pokemon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Scarlet</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!--Menu sticky en haut de la première page-->
+  <div class="menu">
+    <img src="images/logoScarlet.webp" alt="logo Pokémon">
+    <div class="menuDisplay">
+      <a href="index.html" class="selected">Accueil</a>
+      <a href="pageStarters.html"> Pokémons "starters" </a>
+      <a href="pagePersonnage.html">Personnages</a>
+      <a href="pageCarte.html">Carte</a>
+      <a href="pagePokeball.html">Pokéball</a>
+      <a href="pageType.html">Types de Pokémon</a>
+      <a href="bandeAnnonce.html">Bande annonce</a>
+    </div>
+  </div>
+
+  <div class="lesColonnes">
+    <!--Colonne 1 (mauve) de contenu fixe-->
+    <div class="colonne1">
+      <p>Disponible dès maintenant !</p>
+      <!--Image qui apparait a 600px-->
+      <picture>
+        <source media="(max-width:600px)" srcset="images/imageAccueil.jpg">
+        <img src="images/imagescassettejeuViolet.webp" alt="image boitier jeu Pokémon Violet">
+      </picture>
+      <!--Image qui n'apparait que plus de 600px-->
+      <div class="imageTempo">
+        <img src="images/imagecassettejeuScarlet.webp" alt="image boitier jeu Pokémon Scarlet">
+      </div>
+    </div>
+
+    <!--Colonne de contenue 2 variable-->
+    <div class="colonne2">
+      <h1>Pokémon Violet et Pokémon Scarlet</h1>
+
+      <div class="nouvelleAventure">
+        <video width="500" height="500" autoplay loop>
+          <source src="videos/homepage-pokemon.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+
+        <div class="carreTexte">
+          <h2>Une toute nouvelle aventure!</h2>
+          <p>Pokémon Scarlet et Pokémon Violet sont les premiers jeux de rôle en monde ouvert
+            de la série principale Pokémon. Ces opus restent fidèles à la licence,
+            vous permettant de rencontrer des Pokémon, de faire équipe avec eux,
+            de les combattre, de les entraîner et de les échanger,
+            tout en proposant un nouveau type d'aventure enrichie.
+          </p>
+        </div>
+      </div>
+      <img class="imagePageAccueil2" src="images/imagePageAccueil.jpg" alt=" Image Fuecoco avec protagniste">
+      <p>Pokémon Écarlate et Pokémon Violet se déroulent dans un monde ouvert dans lequel
+        les différentes villes s'intègrent naturellement au paysage environnant,
+        sans aucune transition2,3. La région de Paldea est inspirée de la Péninsule
+        Ibérique d’après les images du jeu, où l'on voit ce qui peut s'apparenter à une
+        hacienda, d'autres bâtiments semblent reprendre l'architecture de la ville de
+        Lisbonne ou encore un bâtiment ressemblant à la Sagrada Família de Barcelone4.
+      </p>
+      <img class="imagePageAccueil2" src="images/combatPokemon.webp" alt="Evee en évolution spécial">
+      <audio controls>
+        <source src="theme-song.mp3" type="audio/mp3">
+        Votre navigateur ne prend pas en charge cet élément audio.
+      </audio>
+    </div>
+  </div>
+</body>
+</html>
